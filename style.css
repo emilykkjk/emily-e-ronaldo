@@ -1,15 +1,18 @@
 :root {
-        --branco-principaL: #FFFFFF;
-        --cinza-secundária: #8d8d8d;
-        --cor-botão: #369aa1;
-        --cor-de-fundo: #000305;
-    }
-    body
-    {background-color: var(--cor-de-fundo);}
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #8d8d8d;
+    --botao-azul: #369aa1;
+    --cor-de-fundo: #000305;
+    --fonte-principal: 'Inter';
+  }
+  
+  body {
+    background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
     font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 400;
+  }
   
   * {
     margin: 0;
@@ -17,7 +20,7 @@
   }
   
   .principal {
-    background-image: url("img/Background.png");
+    background-image: url("imagem.png");
     background-repeat: no-repeat;
     background-size: contain;
     align-items: center;
@@ -42,6 +45,7 @@
   .botao-secundario {
     background-color: transparent;
     border: 2px solid var(--branco-principal)
+    
   }
   
   .container-aviso {
@@ -55,15 +59,17 @@
   }
   
   .container-imagem {
-    margin: 1em 0 2em 0;
+    margin: 0,5em 0 20,5em 0;
+    width: 30%;
   }
   
   .container-caixa {
     margin: 0 6em;
   }
   
-  .secundario-imagem {
-    width: 80%;
+  .secundario.imagem {
+    height: 60px;
+    padding: 12px 0;
   }
   
   .secundario {
@@ -90,4 +96,3 @@
   .container-descricao {
     padding: 2em;
   }
-  
